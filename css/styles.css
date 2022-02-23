@@ -11514,3 +11514,17 @@ html {
 .div-header-orange-dot{
   height: 30px; width: 45px; background: orange; border-radius: 35%; position: absolute;
 }
+ .button-left-section{
+  width:40%;
+  height: 100%;
+  background: white;
+  color:black;
+ }
+ .button-right-section{
+  width:60%;
+  height: 100%;
+  margin-left:40%;
+  background: lightyellow;
+  color:black;
+  margin-top: -700px;
+ }
