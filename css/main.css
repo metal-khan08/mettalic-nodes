@@ -1,1 +1,182 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+body {
+  background: #414358;
+  margin: 0;
+}
+
+h1, h2 {
+  color: white;
+}
+
+p {
+  color: #d9d9d9;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.logo {
+  height: 80px;
+  width: 80px;
+}
+
+.navbar {
+  padding: 1em;
+}
+
+.navbar nav {
+  display: none;
+}
+
+.navbar .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: space-between;
+}
+
+section {
+  padding: 5em 2em;
+}
+
+.accordion {
+  max-width: 400px;
+  border-left: 5px solid white;
+  color: white;
+}
+
+.accordion__label, .accordion__content {
+  padding: 14px 20px;
+  color: #d9d9d9;
+}
+
+.accordion__label {
+  display: block;
+  cursor: pointer;
+  position: relative;
+  -webkit-transition: background 0.1s;
+  transition: background 0.1s;
+}
+
+.accordion__label :hover {
+  display: block;
+  color: white;
+  cursor: pointer;
+  position: relative;
+  -webkit-transition: background 0.1s;
+  transition: background 0.1s;
+}
+
+.accordion__label::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: -15px;
+  width: 25px;
+  height: 25px;
+  background-image: url(../assets/img/down-arrow.svg);
+  background-size: contain;
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+  transition: transform 0.4s, -webkit-transform 0.4s;
+}
+
+.accordion__content {
+  line-height: 1.6;
+  font-size: normal;
+  display: none;
+}
+
+.accordion__input {
+  display: none;
+}
+
+.accordion__input:checked ~ .accordion__content {
+  display: block;
+}
+
+.accordion__input:checked ~ .accordion__label::before {
+  -webkit-transform: translateY(-50%) rotate(0.5turn);
+          transform: translateY(-50%) rotate(0.5turn);
+}
+
+.accordion-right {
+  max-width: 400px;
+  border-right: 5px solid white;
+  color: white;
+}
+
+.accordion__label-right, .accordion__content-right {
+  padding: 14px 20px;
+  color: #d9d9d9;
+  text-align: right;
+}
+
+.accordion__label-right {
+  display: block;
+  cursor: pointer;
+  position: relative;
+  -webkit-transition: background 0.1s;
+  transition: background 0.1s;
+}
+
+.accordion__label-right :hover {
+  display: block;
+  color: white;
+  cursor: pointer;
+  position: relative;
+  -webkit-transition: background 0.1s;
+  transition: background 0.1s;
+}
+
+.accordion__label-right::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: -15px;
+  width: 25px;
+  height: 25px;
+  background-image: url(../assets/img/down-arrow.svg);
+  background-size: contain;
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+  transition: transform 0.4s, -webkit-transform 0.4s;
+}
+
+.accordion__content-right {
+  line-height: 1.6;
+  font-size: normal;
+  display: none;
+}
+
+.accordion__input-right {
+  display: none;
+}
+
+.accordion__input-right:checked ~ .accordion__content-right {
+  display: block;
+}
+
+.accordion__input-right:checked ~ .accordion__label-right::before {
+  -webkit-transform: translateY(-50%) rotate(0.5turn);
+          transform: translateY(-50%) rotate(0.5turn);
+}
+
+.mobile-image {
+  height: 500px !important;
+  width: 500px !important;
+}
+
+.left-col-head {
+  border-left: 2px solid #d9d9d9;
+  max-width: 200px;
+  padding-left: 20px;
+}
+/*# sourceMappingURL=main.css.map */
